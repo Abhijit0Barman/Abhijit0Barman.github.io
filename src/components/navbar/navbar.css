@@ -50,8 +50,14 @@
 
 .active {
     color: yellow;
-    /* padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow; */
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+}
+
+.mobMenu {
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
 }
 
 .navMenu {
@@ -68,10 +74,24 @@
     border-radius: 1rem;
 }
 
-.listIten {
+.listItem {
     color: white;
     padding: 0.5rem 3rem;
     margin: 0.25rem;
     background-color: rgb(30, 30, 30);
 
+}
+
+@media screen and (max-width:720px) {
+    .mobMenu {
+        display: flex;
+    }
+
+    .desktopMenu {
+        display: none;
+    }
+
+    .desktopMenuBtn {
+        display: none;
+    }
 }

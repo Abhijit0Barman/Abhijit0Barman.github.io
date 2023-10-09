@@ -1,15 +1,28 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/resumelogo.png";
 import { Link } from "react-scroll";
 import contactImg from "../../assets/contact.png";
 import menu from "../../assets/menu.png";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
+  const fileUrl = "https://drive.google.com/file/d/19w3QlPiGtkTC6lcw9hGVuUBQoginzpv6/view?usp=sharing";
+
+  const download = () => {
+    window.open(fileUrl, "_blank");
+  };
+
   return (
     <nav className="navbar">
-      <img src={logo} alt="Logo" className="logo" />
+      <img
+        onClick={download}
+        style={{ cursor: "pointer" }}
+        src={logo}
+        alt="Logo"
+        className="logo"
+      />
+
       <div className="desktopMenu">
         <Link
           activeClass="active"
@@ -36,7 +49,7 @@ const Navbar = () => {
           to="works"
           spy={true}
           smooth={true}
-          offset={-40}
+          offset={-50}
           duration={500}
           className="desktopMenuListItem">
           Portfolio
@@ -62,8 +75,15 @@ const Navbar = () => {
         <img src={contactImg} alt="" className="desktopMenuImg" />
         Contact Me
       </button>
+
       {/* =========================BELOW-BERGER-MENU============================= */}
-      <img src={menu} alt="Menu" className="mobMenu" onClick={()=>setShow(!show)}/>
+      
+      <img
+        src={menu}
+        alt="Menu"
+        className="mobMenu"
+        onClick={() => setShow(!show)}
+      />
       <div className="navMenu" style={{ display: show ? "flex" : "none" }}>
         <Link
           activeClass="active"
@@ -92,7 +112,7 @@ const Navbar = () => {
           to="works"
           spy={true}
           smooth={true}
-          offset={-40}
+          offset={-50}
           duration={500}
           className="listItem"
           onClick={() => setShow(false)}>
