@@ -1,27 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.84466b96.css",
-    "main.js": "/static/js/main.7bfe2888.js",
-    "static/media/portfolio-6.png": "/static/media/portfolio-6.4a10fac7d271e87859e9.png",
-    "static/media/portfolio-2.png": "/static/media/portfolio-2.33d06b368b4e6395030e.png",
-    "static/media/portfolio-4.png": "/static/media/portfolio-4.8e8bac5e33dc3f211e2b.png",
-    "static/media/portfolio-1.png": "/static/media/portfolio-1.b33adf772d54ab33e953.png",
-    "static/media/portfolio-5.png": "/static/media/portfolio-5.bf754db8618dd60ec6f1.png",
-    "static/media/portfolio-3.png": "/static/media/portfolio-3.ca4192894d93b08ad3b5.png",
-    "static/media/chakraui.png": "/static/media/chakraui.15320604467d004df871.png",
+    "main.css": "/static/css/main.52dfb129.css",
+    "main.js": "/static/js/main.b8bb3354.js",
+    "static/media/nodejs.jpg": "/static/media/nodejs.7d0b6dd3874fbb64c0a7.jpg",
+    "static/media/html.jpg": "/static/media/html.e967fc53d1b1ad043a34.jpg",
+    "static/media/react.jpg": "/static/media/react.8d14599ca927cb7032bc.jpg",
+    "static/media/css3.jpg": "/static/media/css3.a3c971e3f145ae060364.jpg",
+    "static/media/javascript.jpg": "/static/media/javascript.34e3f9d0859cc198b4d0.jpg",
+    "static/media/redux.jpg": "/static/media/redux.80b5e16a38c7c66944eb.jpg",
+    "static/media/postman.jpg": "/static/media/postman.b4f024db027fe34faad0.jpg",
+    "static/media/github.jpg": "/static/media/github.a98e1dee3f5cbe584a5a.jpg",
+    "static/media/express.jpg": "/static/media/express.68ef677f493a3a032805.jpg",
     "static/media/facebook.png": "/static/media/facebook.81dd033a37c4860f7121.png",
+    "static/media/styledmy.jpg": "/static/media/styledmy.51cce12dbae81b150d29.jpg",
+    "static/media/mongo.jpg": "/static/media/mongo.e04e079d6ebf9260864c.jpg",
     "static/media/walmart.png": "/static/media/walmart.1d2b5e5c5c5a8e2bd5ce.png",
     "static/media/resumelogo.png": "/static/media/resumelogo.b8c1b69beb1f6d450308.png",
+    "static/media/chakra.jpg": "/static/media/chakra.0c6ece26cdbf3d705c92.jpg",
     "static/media/ui-design.png": "/static/media/ui-design.c4acd455fc2040eddcc8.png",
     "static/media/instagram.png": "/static/media/instagram.0bcd1dcb7d853c327af7.png",
-    "static/media/bootstrap.svg": "/static/media/bootstrap.3b8c7115a9384838c588eb5514005c8c.svg",
-    "static/media/redux.svg": "/static/media/redux.7fe607aacc31f6e6199e70f16aae407e.svg",
     "index.html": "/index.html",
-    "main.84466b96.css.map": "/static/css/main.84466b96.css.map",
-    "main.7bfe2888.js.map": "/static/js/main.7bfe2888.js.map"
+    "main.52dfb129.css.map": "/static/css/main.52dfb129.css.map",
+    "main.b8bb3354.js.map": "/static/js/main.b8bb3354.js.map"
   },
   "entrypoints": [
-    "static/css/main.84466b96.css",
-    "static/js/main.7bfe2888.js"
+    "static/css/main.52dfb129.css",
+    "static/js/main.b8bb3354.js"
   ]
 }
