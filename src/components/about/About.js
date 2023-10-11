@@ -7,8 +7,8 @@ import appDesign from "../../assets/app-design.png";
 const About = () => {
   return (
     <section id="about" className="about section">
-      <span className="skillTitle">What I do</span>
-      <span className="skillDesc">
+      <span className="skillTitle">About</span>
+      <span className="skillDesc" id="user-detail-intro">
         <p>
           👉 As an outcome-driven Full Stack Web Developer, I bring my expertise
           in both Frontend & Backend, acquired through rigorous training at
@@ -30,8 +30,8 @@ const About = () => {
           <div className="skillBarText">
             <h2>UI/UX design</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id,
-              laborum!
+              Creating user-friendly digital interfaces for seamless, visually
+              engaging experiences.
             </p>
           </div>
         </div>
@@ -40,8 +40,8 @@ const About = () => {
           <div className="skillBarText">
             <h2>Website design</h2>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque,
-              quis.
+              I create stunning websites that captivate and engage online
+              audiences.
             </p>
           </div>
         </div>
@@ -50,8 +50,8 @@ const About = () => {
           <div className="skillBarText">
             <h2>App design</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-              ea.
+              I create user-friendly, visually appealing apps for seamless
+              digital experiences.
             </p>
           </div>
         </div>

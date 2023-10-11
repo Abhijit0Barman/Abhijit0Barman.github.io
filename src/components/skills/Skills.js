@@ -25,7 +25,7 @@ const Skills = () => {
                 className="skills-card"
                 key={el.name}
                 whileHover={{ scale: 1.1 }}>
-                <img className="skill-image" src={el.image} alt={el.name} />
+                <img className="skill-image skills-card-img" src={el.image} alt={el.name} />
                 <p className="skills-card-name">{el.name}</p>
               </div>
             ))}

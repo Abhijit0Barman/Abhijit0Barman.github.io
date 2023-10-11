@@ -68,12 +68,17 @@
     background: rgb(40, 40, 40);
 }
 
+.submitBtn:hover {
+    transform: scale(1.1);
+}
 .submitBtn {
     background-color: white;
     border: none;
     border-radius: 1rem;
     margin: 2rem;
     padding: 0.75rem 3.5rem;
+    transition: transform 0.3s ease;
+
 }
 
 .links {
@@ -86,6 +91,7 @@
     height: 3rem;
     width: 3rem;
     margin: 0 0.75rem;
+    transition: transform 0.3s ease;
 }
 
 .skill-image{
@@ -102,10 +108,10 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 5px;
     text-align: center;
-    transition: transform 0.3s ease;
+    
 }
-.skills-card:hover{
-    transform: scale(1.1);
+.link:hover{
+    transform: scale(1.5);
 }
 
 .skills-card-name{

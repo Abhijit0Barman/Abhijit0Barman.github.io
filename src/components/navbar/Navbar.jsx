@@ -8,27 +8,32 @@ import menu from "../../assets/menu.png";
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const fileUrl =
-    "https://drive.google.com/file/d/19w3QlPiGtkTC6lcw9hGVuUBQoginzpv6/view?usp=sharing";
+    "https://drive.google.com/u/0/uc?id=1UGNCXgAYvcXm996AQlc5r9yOd3ZsgAcG&export=download";
 
   const download = () => {
     window.open(fileUrl, "_blank");
   };
 
   return (
-    <nav className="navbar" id="nav-menu">
+    <nav className="navbar nav-link resume" id="nav-menu">
       <span style={{ display: "flex" }}>
-        <p style={{ color: "yellow" }}>
-          Resume 👉
+        {/* <p style={{ color: "yellow" }}>
+          View
           <br />
-          Download
-        </p>
-        <img
-          onClick={download}
-          style={{ cursor: "pointer" }}
-          src={logo}
-          alt="Logo"
-          className="logo"
-        />
+          Resume 👉
+        </p> */}
+        <Link>
+          <button onClick={download} id="resume-button-1">
+            <img
+              style={{ cursor: "pointer" }}
+              src={logo}
+              alt="Logo"
+              className="logo"
+
+              // id="resume-link-1"
+            />
+          </button>
+        </Link>
       </span>
 
       <div className="desktopMenu">
@@ -39,7 +44,7 @@ const Navbar = () => {
           smooth={true}
           offset={-100}
           duration={500}
-          className="desktopMenuListItem">
+          className="desktopMenuListItem nav-link home">
           Home
         </Link>
         <Link
@@ -49,7 +54,7 @@ const Navbar = () => {
           smooth={true}
           offset={-50}
           duration={500}
-          className="desktopMenuListItem">
+          className="desktopMenuListItem nav-link about">
           About
         </Link>
         <Link
@@ -59,7 +64,7 @@ const Navbar = () => {
           smooth={true}
           offset={-50}
           duration={500}
-          className="desktopMenuListItem">
+          className="desktopMenuListItem nav-link skills">
           Skills
         </Link>
         <Link
@@ -69,12 +74,12 @@ const Navbar = () => {
           smooth={true}
           offset={-90}
           duration={500}
-          className="desktopMenuListItem">
+          className="desktopMenuListItem nav-link projects">
           Projects
         </Link>
       </div>
       <button
-        className="desktopMenuBtn"
+        className="desktopMenuBtn nav-link contact"
         onClick={() => {
           document
             .getElementById("contact")

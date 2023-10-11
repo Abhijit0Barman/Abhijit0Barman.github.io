@@ -43,7 +43,7 @@ const Works = () => {
 
 const Projects = () => {
   return (
-      <ProjectsSection className="content projects" id="projects">
+      <ProjectsSection className="content projects " id="projects">
         <ProjectsHeading>Projects</ProjectsHeading>
         <ProjectsGrid>
           {ProjectList.map((list, index) => (
