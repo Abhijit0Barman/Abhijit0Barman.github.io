@@ -7,26 +7,34 @@ import menu from "../../assets/menu.png";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
-  const fileUrl = "https://drive.google.com/file/d/19w3QlPiGtkTC6lcw9hGVuUBQoginzpv6/view?usp=sharing";
+  const fileUrl =
+    "https://drive.google.com/file/d/19w3QlPiGtkTC6lcw9hGVuUBQoginzpv6/view?usp=sharing";
 
   const download = () => {
     window.open(fileUrl, "_blank");
   };
 
   return (
-    <nav className="navbar">
-      <img
-        onClick={download}
-        style={{ cursor: "pointer" }}
-        src={logo}
-        alt="Logo"
-        className="logo"
-      />
+    <nav className="navbar" id="nav-menu">
+      <span style={{ display: "flex" }}>
+        <p style={{ color: "yellow" }}>
+          Resume 👉
+          <br />
+          Download
+        </p>
+        <img
+          onClick={download}
+          style={{ cursor: "pointer" }}
+          src={logo}
+          alt="Logo"
+          className="logo"
+        />
+      </span>
 
       <div className="desktopMenu">
         <Link
           activeClass="active"
-          to="intro"
+          to="home"
           spy={true}
           smooth={true}
           offset={-100}
@@ -36,7 +44,7 @@ const Navbar = () => {
         </Link>
         <Link
           activeClass="active"
-          to="skills"
+          to="about"
           spy={true}
           smooth={true}
           offset={-50}
@@ -46,23 +54,23 @@ const Navbar = () => {
         </Link>
         <Link
           activeClass="active"
-          to="works"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-          className="desktopMenuListItem">
-          Portfolio
-        </Link>
-        <Link
-          activeClass="active"
           to="clients"
           spy={true}
           smooth={true}
           offset={-50}
           duration={500}
           className="desktopMenuListItem">
-          Clients
+          Skills
+        </Link>
+        <Link
+          activeClass="active"
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-90}
+          duration={500}
+          className="desktopMenuListItem">
+          Projects
         </Link>
       </div>
       <button
@@ -77,7 +85,7 @@ const Navbar = () => {
       </button>
 
       {/* =========================BELOW-BERGER-MENU============================= */}
-      
+
       <img
         src={menu}
         alt="Menu"
@@ -87,7 +95,7 @@ const Navbar = () => {
       <div className="navMenu" style={{ display: show ? "flex" : "none" }}>
         <Link
           activeClass="active"
-          to="intro"
+          to="home"
           spy={true}
           smooth={true}
           offset={-100}
@@ -98,7 +106,7 @@ const Navbar = () => {
         </Link>
         <Link
           activeClass="active"
-          to="skills"
+          to="about"
           spy={true}
           smooth={true}
           offset={-50}
@@ -109,17 +117,6 @@ const Navbar = () => {
         </Link>
         <Link
           activeClass="active"
-          to="works"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-          className="listItem"
-          onClick={() => setShow(false)}>
-          Portfolio
-        </Link>
-        <Link
-          activeClass="active"
           to="clients"
           spy={true}
           smooth={true}
@@ -127,14 +124,26 @@ const Navbar = () => {
           duration={500}
           className="listItem"
           onClick={() => setShow(false)}>
-          Clients
+          Skills
         </Link>
+        <Link
+          activeClass="active"
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          className="listItem"
+          onClick={() => setShow(false)}>
+          Projects
+        </Link>
+
         <Link
           activeClass="active"
           to="contact"
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={-65}
           duration={500}
           className="listItem"
           onClick={() => setShow(false)}>

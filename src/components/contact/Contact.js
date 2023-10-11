@@ -1,9 +1,5 @@
 import React, { useRef } from "react";
 import "./contact.css";
-import walmart from "../../assets/walmart.png";
-import Adobe from "../../assets/adobe.png";
-import Microsoft from "../../assets/microsoft.png";
-import Facebook from "../../assets/facebook.png";
 import iconF from "../../assets/facebook-icon.png";
 import iconT from "../../assets/twitter.png";
 import iconY from "../../assets/youtube.png";
@@ -36,21 +32,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contactPage">
-      <div id="clients">
-        <h1 className="contactPageTitle">My Clients</h1>
-        <p className="clientDesc">
-          I had the opportunity to work with a diverse group of peoples.
-          {/* Some of the notable companies I have worked with includes  */}
-        </p>
-        <div className="clientImgs">
-          <img src={walmart} alt="walmart" className="clientImg" />
-          <img src={Adobe} alt="Adobe" className="clientImg" />
-          <img src={Microsoft} alt="Microsoft" className="clientImg" />
-          <img src={Facebook} alt="Facebook" className="clientImg" />
-        </div>
-      </div>
-      <div id="contact">
+    <section id="contact">
+      <br />
+      <br />
+      <br />
         <h1 className="contactPageTitle">Contact Me</h1>
         <span className="contactDesc">
           Please fill out the form below to discuss any work opportunities
@@ -83,7 +68,6 @@ const Contact = () => {
             <img src={iconI} alt="iconI" className="link" />
           </div>
         </form>
-      </div>
     </section>
   );
 };

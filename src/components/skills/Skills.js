@@ -1,41 +1,70 @@
-import React from "react";
 import "./skills.css";
-import UIDesign from '../../assets/ui-design.png'
-import webDesign from '../../assets/website-design.png'
-import appDesign from '../../assets/app-design.png'
+//Tech Stack Images
+import html from "../images/html.jpg";
+import css3 from "../images/css3.jpg";
+import javascript from "../images/javascript.jpg";
+import react from "../images/react.jpg";
+import chakra from "../images/chakra.jpg";
+import nodejs from "../images/nodejs.jpg";
+import mongo from "../images/mongo.jpg";
+import express from "../images/express.jpg";
+import github from "../images/github.jpg";
+import redux from "../images/redux.jpg";
+import postman from "../images/postman.jpg";
+import styledmy from "../images/styledmy.jpg";
 
 const Skills = () => {
-    return (
-        <section id="skills">
-            <span className="skillTitle">What I do</span>
-            <span className="skillDesc">
-                I am a skilled and passionate web devloper with creating visually appealing and user-friendly websites. I have a strong understanding of concepts and a keen eye for detail. I am proficient in HTML, CSS, and JavaScript, as well as technology such as React, Node, Express, MondoDB and TypeScript.
-            </span>
-            <div className="skillBars">
-                <div className="skillBar">
-                    <img src={UIDesign} alt="UIDesign" className="skillBarImg" />
-                    <div className="skillBarText">
-                        <h2>UI/UX design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, laborum!</p>
-                    </div>
-                </div>
-                <div className="skillBar">
-                    <img src={webDesign} alt="webDesign" className="skillBarImg" />
-                    <div className="skillBarText">
-                        <h2>Website design</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, quis.</p>
-                    </div>
-                </div>
-                <div className="skillBar">
-                    <img src={appDesign} alt="appDesign" className="skillBarImg" />
-                    <div className="skillBarText">
-                        <h2>App design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ea.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+  return (
+    <section id="skills">
+      <div id="clients">
+        <h1 className="skillsPageTitle">Tech Stack</h1>
+        <div className="clientImgs">
+          <div className="outer">
+            {skills.map((el) => (
+              <div
+                className="skills-card"
+                key={el.name}
+                whileHover={{ scale: 1.1 }}>
+                <img className="skill-image" src={el.image} alt={el.name} />
+                <p className="skills-card-name">{el.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </section>
+  );
 };
 
 export default Skills;
+
+const skills = [
+  { name: "HTML5", image: html },
+  { name: "CSS3", image: css3 },
+  { name: "JavaScript", image: javascript },
+  { name: "React", image: react },
+  {
+    name: "TypeScript",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+  },
+  { name: "Chakra UI", image: chakra },
+  { name: "Node.js", image: nodejs },
+  { name: "MongoDB", image: mongo },
+  { name: "Express", image: express },
+  { name: "GitHub", image: github },
+  { name: "Redux", image: redux },
+  { name: "Postman", image: postman },
+  {
+    name: "Git",
+    image:
+      "https://mohitkss.github.io/static/media/git.b1472a80b81e487179cf.png",
+  },
+  { name: "Styled Components", image: styledmy },
+];

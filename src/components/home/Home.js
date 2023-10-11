@@ -1,11 +1,11 @@
 import React from "react";
-import "./intro.css";
+import "./home.css";
 import { Link } from "react-scroll";
 import btnImg from "../../assets/hireme.png";
 
-const Intro = () => {
+const Home = () => {
   return (
-    <section id="intro">
+    <section id="home">
       <div className="introContent">
         <span className="hello">Hello,</span>
         <span className="introText">
@@ -13,8 +13,9 @@ const Intro = () => {
           <br /> Full Stack Web Devloper
         </span>
         <p className="introPara">
-          I am a skilled MERN Stack Devloper with creating <br /> visually appealing
-          and user friendly web-sites/apps
+          I am a skilled full-stack web developer, proficient in both 
+          front-end and back-end technologies, 
+          dedicated to creating engaging and user-friendly web experiences.
         </p>
         <Link>
           <button className="btn">
@@ -28,4 +29,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default Home;

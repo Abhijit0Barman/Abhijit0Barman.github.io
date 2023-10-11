@@ -1,4 +1,4 @@
-#contactPage {
+#contact {
     min-height: calc(100vh - 4rem);
     width: 100vw;
     max-width: 60rem;
@@ -86,4 +86,39 @@
     height: 3rem;
     width: 3rem;
     margin: 0 0.75rem;
+}
+
+.skill-image{
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.skills-card{
+    background-color: #f0efd4;
+    color: black;
+    font-weight: 500;
+    padding: 30px 10px 15px 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.skills-card:hover{
+    transform: scale(1.1);
+}
+
+.skills-card-name{
+    font-size: 18px;
+    margin-top: 10px;
+
+}
+
+.outer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 35px;
+    width: 85%;
+    margin: 0 auto;
+    color: white;
 }

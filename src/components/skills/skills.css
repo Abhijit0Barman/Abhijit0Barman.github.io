@@ -1,73 +1,124 @@
 #skills {
-    overflow: hidden;
+    min-height: calc(100vh - 4rem);
     width: 100vw;
-    max-width: 65rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.skillsPageTitle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* .clientDesc {
+    font-weight: 300;
+    font-size: 1rem;
+} */
+
+.clientImgs {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clientImg {
+    object-fit: cover;
+    width: 23%;
+    min-width: 9rem;
+    margin: auto;
+    padding: 0.25rem;
+}
+
+#clients {
+    padding: 2rem;
+}
+
+.contactDesc {
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.contactForm {
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    margin: 0 auto;
+    width: 90vw;
+    max-width: 60rem;
 }
 
-.skillTitle {
-    font-size: 3rem;
-    font-weight: 600;
-    padding-top: 3rem;
-    margin-bottom: 1.5rem;
+.name,
+.email,
+.msg {
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgb(40, 40, 40);
 }
 
-.skillDesc {
-    font-weight: 300;
-    font-size: 1rem;
-    max-width: 55rem;
-    padding: 0 2rem;
+.submitBtn {
+    background-color: white;
+    border: none;
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 0.75rem 3.5rem;
 }
 
-.skillBars {
-    margin: 1.5rem;
-    width: 100vw;
-    max-width: 80%;
-    text-align: left;
-}
-
-.skillBar {
+.links {
     display: flex;
-    margin: 1rem;
-    padding: 1.5rem 2rem;
-    background-color: rgb(50, 50, 50);
-    /* justify-content: space-around; */
+    flex-wrap: wrap;
 }
 
-.skillBarImg {
+.link {
     object-fit: cover;
     height: 3rem;
     width: 3rem;
-    margin-right: 2rem;
+    margin: 0 0.75rem;
 }
 
-.skillBarText>p {
-    font-size: 0.9rem;
-    font-weight: 200;
+.skill-image{
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
 }
 
-@media screen and (max-width:720px) {
-    .skillBarText>p {
-        font-size: 2vw;
-    }
+.skills-card{
+    background-color: #f0efd4;
+    color: black;
+    font-weight: 500;
+    padding: 30px 10px 15px 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.skills-card:hover{
+    transform: scale(1.1);
 }
 
-@media screen and (max-width:480px) {
-    .skillBarText>p {
-        font-size: 3vw;
-    }
+.skills-card-name{
+    font-size: 18px;
+    margin-top: 10px;
 
-    .skillBarImg {
-        height: 2.25rem;
-        width: 2.25rem;
-    }
+}
 
-    .skillBarText>h2 {
-        font-size: 5vw;
-    }
+.outer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 35px;
+    width: 85%;
+    margin: 0 auto;
+    color: white;
 }

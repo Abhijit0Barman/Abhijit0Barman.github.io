@@ -1,17 +1,21 @@
 import Navbar from "./components/navbar/Navbar";
-import Intro from "./components/intro/Intro";
-import Skills from "./components/skills/Skills";
-import Works from "./components/works/Works";
+import Home from "./components/home/Home";
+import About from "./components/about/About";
+import Projects from "./components/Projects/Projects";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import Github from "./components/github/Github";
+import Skills from "./components/skills/Skills";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Intro />
+      <Home />
+      <About />
       <Skills />
-      <Works />
+      <Projects />
+      <Github />
       <Contact />
       <Footer />
     </div>
