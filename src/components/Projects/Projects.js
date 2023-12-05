@@ -19,6 +19,8 @@ import fastFashion from "../../assets/projects/fastFashion.png";
 import firebase from "../../assets/techStack/firebase.png";
 import stripe from "../../assets/techStack/stripe.png";
 import travelo from "../../assets/projects/travelo.png";
+import ez from "../../assets/projects/ez.png";
+import woodCraft from "../../assets/projects/woodCraft.png";
 
 /*
 const Works = () => {
@@ -120,27 +122,27 @@ const ProjectList = [
     github_url: "https://github.com/Abhijit0Barman/Travelo",
     demo_url: "https://vogue-pocket-8479-sooty.vercel.app/",
   },
-  /* 
   {
     id: 3,
-    img: chakra,
-    title: "StayUpdate",
+    img: ez,
+    title: "Ez-Life",
     description:
-      "Discover StayUpdate, your gateway to the latest news and current affairs. Immerse yourself in a world of up-to-date information and engaging articles. With a user-friendly interface, StayUpdate offers seamless access to a wealth of knowledge. Explore diverse topics, stay informed, and indulge your curiosity. StayUpdate – where staying updated is effortless and enlightening.",
-    tech_stack: [html, css3, javascript],
-    github_url: "https://github.com/Biswajit2595/auspicious-oven-3200",
-    demo_url: "https://starlit-basbousa-e2dce5.netlify.app/",
+      "Welcome to the Travelo GitHub page. Here, we share our commitment to promoting sustainable and responsible tourism through the power of technology. Our open-source projects aim to create innovative tools that make it easier for ecotourism enthusiasts to find sustainable travel experiences and learn about environmental conservation. We believe that collaboration and technology can be powerful tools in promoting sustainable tourism, and we invite you to join us in our mission to protect the planet through responsible travel. This project might ( and certainly does ) have bugs, vulnerabilities, or other issues. So, contributions are always welcome ☺ The demo is under free hosting so it may require a bit of patience ☺",
+    tech_stack: [html, css3, javascript,react,javascript],
+    github_url: "https://github.com/Abhijit0Barman/Ez-Life",
+    demo_url: "https://hulking-income-7436.vercel.app/login",
   },
- {
+  {
     id: 4,
-    img: chakra,
-    title: "UPSTYLE",
+    img: woodCraft,
+    title: "WOOD CRAFT",
     description:
-      "Elevate your wardrobe with premium clothing and timeless fashion. Discover curated collections that embody elegance and embrace the essence of style. Unleash your fashion potential today!",
+      "Welcome to the Woodcraft GitHub page. Here, we share our commitment to promoting sustainable and responsible products through the power of technology. Our open-source projects aim to create innovative tools that make it easier for ecotourism enthusiasts to find sustainable selling experiences and learn about environmental conservation. We believe that collaboration and technology can be powerful tools in promoting sustainable selling, and we invite you to join us in our mission to protect the planet through responsible buy & sell",
     tech_stack: [react, redux, chakra, typscrpt],
-    github_url: "https://github.com/Biswajit2595/warlike-current-5989",
-    demo_url: "https://upstylenew.netlify.app/",
+    github_url: "https://github.com/Abhijit0Barman/Wood-Crafts",
+    demo_url: "https://resilient-partner-542.vercel.app/",
   },
+  /* 
   {
     id: 5,
     img: chakra,
@@ -187,7 +189,7 @@ const ProjectsGrid = styled.div`
 `;
 
 const ProjectCard = styled(motion.div)`
-  width: 95%;
+  width: 90%;
   margin: auto;
   padding: 1.5rem;
   background-color: beige;
@@ -212,7 +214,8 @@ const CardLeft = styled.div`
   /* overflow: hidden; */
   img {
     border-radius: 20px;
-    max-height: 70%;
+    /* max-height: 100%; */
+    max-width: 100%;
     transition: transform 0.5s ease-in-out;
   }
   img:hover {
