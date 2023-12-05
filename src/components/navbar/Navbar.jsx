@@ -4,14 +4,15 @@ import logo from "../../assets/resumelogo.png";
 import { Link } from "react-scroll";
 import contactImg from "../../assets/contact.png";
 import menu from "../../assets/menu.png";
+import down from "../../assets/Abhijit.pdf"
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
-  const fileUrl =
-    "https://drive.google.com/u/0/uc?id=1UGNCXgAYvcXm996AQlc5r9yOd3ZsgAcG&export=download";
+  const fileUrlView =
+    "https://drive.google.com/file/d/1p_7WsyxYBg6AwWdl-CdAz0y_aDxLH25M/view";
 
   const download = () => {
-    window.open(fileUrl, "_blank");
+    window.open(fileUrlView, "_blank");
   };
 
   return (
@@ -22,18 +23,27 @@ const Navbar = () => {
           <br />
           Resume 👉
         </p> */}
-        <Link>
-          <button onClick={download} id="resume-button-1">
-            <img
-              style={{ cursor: "pointer" }}
-              src={logo}
-              alt="Logo"
-              className="logo"
-
-              // id="resume-link-1"
-            />
-          </button>
-        </Link>
+        {/* <Link> */}
+          {/* <button onClick={download} id="resume-button-1"> */}
+            <a
+              href={down}
+              rel="noreferrer"
+              download={"Abhijit-Barman-Resume.pdf"}
+              target="_blank"
+              onClick={download}
+              >
+                
+              <img
+                style={{ cursor: "pointer" }}
+                src={logo}
+                alt="Logo"
+                className="logo"
+                
+                // id="resume-link-1"
+                />
+                </a>
+          {/* </button> */}
+        {/* </Link> */}
       </span>
 
       <div className="desktopMenu">

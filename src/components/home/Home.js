@@ -3,11 +3,12 @@ import "./home.css";
 import { Link } from "react-scroll";
 import btnImg from "../../assets/hireme.png";
 import { TypeAnimation } from "react-type-animation";
+import down from "../../assets/Abhijit.pdf"
 
 const Home = () => {
   const handleClick = () => {
     window.open(
-      "https://drive.google.com/u/0/uc?id=1UGNCXgAYvcXm996AQlc5r9yOd3ZsgAcG&export=download",
+      "https://drive.google.com/file/d/1p_7WsyxYBg6AwWdl-CdAz0y_aDxLH25M/view",
       "_blank"
     );
   };
@@ -52,7 +53,9 @@ const Home = () => {
           dedicated to creating engaging and user-friendly web experiences.
         </p>
         <div>
-          <Link>
+          <a href={down}  rel="noreferrer"
+              download={"Abhijit-Barman-Resume.pdf"}
+              target="_blank">
             <button
               id="resume-button-2"
               // id="resume-link-2"
@@ -61,7 +64,7 @@ const Home = () => {
               <img src="./download.png" className="btnImg" alt="Hire Me" />
               Download
             </button>
-          </Link>{" "}
+          </a>{" "}
           <Link>
             <button className="btn" onClick={mail}>
               <img src={btnImg} className="btnImg" alt="Hire Me" />
