@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.c1907dde.css",
-    "main.js": "/static/js/main.206e1ec3.js",
+    "main.js": "/static/js/main.75bce650.js",
     "static/media/travelo.png": "/static/media/travelo.f7442e4c3bf3eebd0fef.png",
     "static/media/Abhijit.pdf": "/static/media/Abhijit.f2f5457dfca2ce0b92a1.pdf",
     "static/media/nodejs.jpg": "/static/media/nodejs.7d0b6dd3874fbb64c0a7.jpg",
     "static/media/html.jpg": "/static/media/html.e967fc53d1b1ad043a34.jpg",
+    "static/media/ez.png": "/static/media/ez.32e53d401527b061ca4e.png",
     "static/media/react.jpg": "/static/media/react.8d14599ca927cb7032bc.jpg",
     "static/media/css3.jpg": "/static/media/css3.a3c971e3f145ae060364.jpg",
     "static/media/javascript.jpg": "/static/media/javascript.34e3f9d0859cc198b4d0.jpg",
@@ -14,6 +15,7 @@
     "static/media/postman.jpg": "/static/media/postman.b4f024db027fe34faad0.jpg",
     "static/media/github.jpg": "/static/media/github.a98e1dee3f5cbe584a5a.jpg",
     "static/media/express.jpg": "/static/media/express.68ef677f493a3a032805.jpg",
+    "static/media/woodCraft.png": "/static/media/woodCraft.fd1d336555856dedb6ec.png",
     "static/media/styledmy.jpg": "/static/media/styledmy.51cce12dbae81b150d29.jpg",
     "static/media/mongo.jpg": "/static/media/mongo.e04e079d6ebf9260864c.jpg",
     "static/media/resumelogo.png": "/static/media/resumelogo.b8c1b69beb1f6d450308.png",
@@ -22,10 +24,10 @@
     "static/media/instagram.png": "/static/media/instagram.0bcd1dcb7d853c327af7.png",
     "index.html": "/index.html",
     "main.c1907dde.css.map": "/static/css/main.c1907dde.css.map",
-    "main.206e1ec3.js.map": "/static/js/main.206e1ec3.js.map"
+    "main.75bce650.js.map": "/static/js/main.75bce650.js.map"
   },
   "entrypoints": [
     "static/css/main.c1907dde.css",
-    "static/js/main.206e1ec3.js"
+    "static/js/main.75bce650.js"
   ]
 }
