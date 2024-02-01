@@ -1,0 +1,12 @@
+.footer {
+    width: 100vw;
+    height: 8rem;
+    background: rgb(40, 40, 40);
+    /* display:block; */
+    /* align-items: center;
+    justify-content: center; */
+    font-weight: 300;
+    font-size: small;
+    /* margin: auto; */
+    text-align: center;
+}
