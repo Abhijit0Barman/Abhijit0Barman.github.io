@@ -112,6 +112,9 @@
 }
 .link:hover{
     transform: scale(1.5);
+    /* color: aliceblue; */
+    background-color: aliceblue;
+    border-radius: 50%;
 }
 
 .skills-card-name{

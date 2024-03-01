@@ -67,7 +67,7 @@ const Contact = () => {
           <img src={iconY} alt="iconY" className="link" />
           <img src={iconI} alt="iconI" className="link" /> */}
           <a
-            href="https://www.linkedin.com/in/abhijit0barman/"
+            href="https://www.linkedin.com/in/abhijitbarmandev/"
             target="_blank"
             rel="noopener noreferrer"
             id="contact-linkedin">
